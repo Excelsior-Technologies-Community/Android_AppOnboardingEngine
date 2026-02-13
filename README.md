@@ -49,7 +49,7 @@ A customizable and lightweight Android Onboarding Overlay Library that helps you
 # **Preview**
 ---
 <p align="center">
-  <img src="https://github.com/S13reya/Android_SwipeTransition/blob/stages/app/src/main/assets/demovideo.gif" height="320"/>
+  <img src="https://github.com/S13reya/Android_AppOnboardingEngine/blob/stages/app/src/main/assets/demovideo.gif" height="320"/>
 
 
 
