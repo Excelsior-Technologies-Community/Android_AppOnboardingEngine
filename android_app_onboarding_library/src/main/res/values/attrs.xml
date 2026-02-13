@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OnboardingOverlay">
+        <!-- Overlay colors -->
+        <attr name="overlayBackgroundColor" format="color"/>
+
+        <!-- Highlight settings -->
+        <attr name="highlightRadius" format="dimension"/>
+
+        <!-- Text colors -->
+        <attr name="titleTextColor" format="color"/>
+        <attr name="descriptionTextColor" format="color"/>
+
+        <!-- Text sizes -->
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="descriptionTextSize" format="dimension"/>
+
+        <!-- Arrow settings -->
+        <attr name="arrowColor" format="color"/>
+    </declare-styleable>
+</resources>

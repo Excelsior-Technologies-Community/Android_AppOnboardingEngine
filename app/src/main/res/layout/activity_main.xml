@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Awesome App"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Feature Button 1 -->
+    <Button
+        android:id="@+id/btnFeature1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Feature 1"
+        android:textSize="18sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Feature Button 2 -->
+    <Button
+        android:id="@+id/btnFeature2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Feature 2"
+        android:textSize="18sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#2196F3"
+        app:layout_constraintTop_toBottomOf="@id/btnFeature1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Feature Button 3 -->
+    <Button
+        android:id="@+id/btnFeature3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Feature 3"
+        android:textSize="18sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF9800"
+        app:layout_constraintTop_toBottomOf="@id/btnFeature2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Start Onboarding Button -->
+    <Button
+        android:id="@+id/btnStartOnboarding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start Onboarding Tour"
+        android:textSize="16sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#9C27B0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Onboarding Overlay -->
+    <com.ext.android_app_onboarding_library.OnboardingOverlay
+        android:id="@+id/onboardingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        app:overlayBackgroundColor="#DD000000"
+        app:highlightRadius="200dp"
+        app:titleTextSize="60sp"
+        app:descriptionTextSize="42sp"
+        app:titleTextColor="#FFFFFF"
+        app:descriptionTextColor="#CCCCCC"
+        app:arrowColor="#4CAF50"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
